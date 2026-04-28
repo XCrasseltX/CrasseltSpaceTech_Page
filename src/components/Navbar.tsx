@@ -16,7 +16,7 @@ import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
-import { LogoIcon } from "./Icons";
+//import { LogoIcon } from "./Icons";
 
 interface RouteProps {
   href: string;
@@ -54,8 +54,7 @@ export const Navbar = () => {
               href="/"
               className="ml-2 font-bold text-xl flex"
             >
-              <LogoIcon />
-              ShadcnUI/React
+              Crasselt SpaceTech
             </a>
           </NavigationMenuItem>
 
@@ -96,7 +95,7 @@ export const Navbar = () => {
                   ))}
                   <a
                     rel="noreferrer noopener"
-                    href="https://github.com/leoMirandaa/shadcn-landing-page.git"
+                    href="https://github.com/XCrasseltX/"
                     target="_blank"
                     className={`w-[110px] border ${buttonVariants({
                       variant: "secondary",
