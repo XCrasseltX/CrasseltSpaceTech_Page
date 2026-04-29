@@ -82,7 +82,7 @@ export const HeroCards = () => {
               </span>
             ))}
           </div>
-          <Button className="w-full text-xs"></Button>
+          <Button className="w-full text-xs">VIEW TELEMETRY</Button>
         </CardContent>
       </Card>
 

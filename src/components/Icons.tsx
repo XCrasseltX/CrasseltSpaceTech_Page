@@ -1,11 +1,11 @@
 import logoUrl from "../assets/Logo.png";
 
-export const LogoIcon = () => {
+export const LogoIcon = ({ className = "w-10 h-auto" }) => {
   return (
     <img
       src={logoUrl}
       alt="Logo"
-      className="w-50 h-35 pbject-contain"/>
+      className={`${className} object-contain`}/>
   );
 };
 
