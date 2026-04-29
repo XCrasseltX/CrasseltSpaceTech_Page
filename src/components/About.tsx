@@ -23,13 +23,12 @@ export const About = () => {
                 Crasselt SpaceTech
               </h2>
               <p className="text-xl text-muted-foreground mt-4">
-                In einer Welt, die sich oft zwischen reiner Hardware-Entwicklung und isolierter Software-Logik spaltet, 
-                schließe ich die Lücke. Als Technischer Produktdesigner mit einer tiefen Leidenschaft für Embedded C++ und künstliche Intelligenz 
-                betrachte ich Systeme ganzheitlich.
-                Vom ersten CAD-Entwurf in SolidWorks über die aerodynamische Validierung in OpenFOAM bis hin zur Implementierung komplexer Steuerungsalgorithmen (SNN). 
-                Ich liefere nicht nur Entwürfe, sondern funktionale Prototypen.
-                Mit Crasselt SpaceTech verfolge ich eine klare Vision: Die nächste Generation der Robotik und Luftfahrt braucht keine Bauteile, sie braucht Organe. Systeme, 
-                die durch Simulationen optimiert und durch 'Gizmo' – meine SNN-Hormonsimulation – mit einer organischen Intelligenz ausgestattet sind.
+                In a world often split between pure hardware development and isolated software logic, 
+                I bridge the gap. As a Technical Product Designer with a deep passion for Embedded C++ and Artificial Intelligence, I view systems holistically.
+                From the initial CAD design in SolidWorks and aerodynamic validation in OpenFOAM to the implementation of complex control algorithms (SNN) – 
+                I don't just deliver drafts; I build functional prototypes.
+                With Crasselt SpaceTech, I pursue a clear vision: the next generation of robotics and aerospace doesn't need components; it needs organs. 
+                Systems that are optimized through simulations and endowed with organic intelligence by 'Gizmo' – my SNN-based hormone simulation.
               </p>
             </div>
 

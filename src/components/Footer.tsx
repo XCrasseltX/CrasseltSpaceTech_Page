@@ -13,7 +13,7 @@ export const Footer = () => {
             className="font-bold text-xl flex"
           >
             <LogoIcon />
-            ShadcnUI/React
+            Crasselt SpaceTech
           </a>
         </div>
 
@@ -134,7 +134,7 @@ export const Footer = () => {
               href="#"
               className="opacity-60 hover:opacity-100"
             >
-              Discord
+              Instagram
             </a>
           </div>
 
@@ -144,7 +144,7 @@ export const Footer = () => {
               href="#"
               className="opacity-60 hover:opacity-100"
             >
-              Twitch
+              Facebook
             </a>
           </div>
         </div>
@@ -152,14 +152,14 @@ export const Footer = () => {
 
       <section className="container pb-14 text-center">
         <h3>
-          &copy; 2024 Landing page made by{" "}
+          &copy; 2026 Landing page made by{" "}
           <a
             rel="noreferrer noopener"
             target="_blank"
-            href="https://www.linkedin.com/in/leopoldo-miranda/"
+            href="https://www.linkedin.com/in/michael-crasselt/"
             className="text-primary transition-all border-primary hover:border-b-2"
           >
-            Leo Miranda
+            Michael Crasselt
           </a>
         </h3>
       </section>
