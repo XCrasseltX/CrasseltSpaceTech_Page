@@ -16,7 +16,7 @@ import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
-//import { LogoIcon } from "./Icons";
+import { LogoIcon } from "./Icons";
 
 interface RouteProps {
   href: string;
@@ -54,6 +54,7 @@ export const Navbar = () => {
               href="/"
               className="ml-2 font-bold text-xl flex"
             >
+              <LogoIcon className="w-250 h-auto"/>
               Crasselt SpaceTech
             </a>
           </NavigationMenuItem>

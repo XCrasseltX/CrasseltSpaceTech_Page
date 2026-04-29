@@ -1,10 +1,20 @@
 import logoUrl from "../assets/Logo.png";
+import IconUrl from "../assets/Icon.png";
 
 export const LogoIcon = ({ className = "w-10 h-auto" }) => {
   return (
     <img
       src={logoUrl}
       alt="Logo"
+      className={`${className} object-contain`}/>
+  );
+};
+
+export const Icon = ({ className = "w-10 h-auto" }) => {
+  return (
+    <img
+      src={IconUrl}
+      alt="Icon"
       className={`${className} object-contain`}/>
   );
 };
