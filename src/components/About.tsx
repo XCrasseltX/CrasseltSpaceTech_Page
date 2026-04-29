@@ -20,14 +20,16 @@ export const About = () => {
                 <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
                   About{" "}
                 </span>
-                Company
+                Crasselt SpaceTech
               </h2>
               <p className="text-xl text-muted-foreground mt-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit.
+                In einer Welt, die sich oft zwischen reiner Hardware-Entwicklung und isolierter Software-Logik spaltet, 
+                schließe ich die Lücke. Als Technischer Produktdesigner mit einer tiefen Leidenschaft für Embedded C++ und künstliche Intelligenz 
+                betrachte ich Systeme ganzheitlich.
+                Vom ersten CAD-Entwurf in SolidWorks über die aerodynamische Validierung in OpenFOAM bis hin zur Implementierung komplexer Steuerungsalgorithmen (SNN). 
+                Ich liefere nicht nur Entwürfe, sondern funktionale Prototypen.
+                Mit Crasselt SpaceTech verfolge ich eine klare Vision: Die nächste Generation der Robotik und Luftfahrt braucht keine Bauteile, sie braucht Organe. Systeme, 
+                die durch Simulationen optimiert und durch 'Gizmo' – meine SNN-Hormonsimulation – mit einer organischen Intelligenz ausgestattet sind.
               </p>
             </div>
 

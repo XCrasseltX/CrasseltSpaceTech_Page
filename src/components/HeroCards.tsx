@@ -52,7 +52,7 @@ export const HeroCards = () => {
           </p>
         </CardContent>
         <CardFooter className="gap-2">
-            <a href="https://github.com/XCrasseltX" target="_blank" className={buttonVariants({ variant: "ghost", size: "sm" })}>
+            <a href="https://github.com/XCrasseltX/" target="_blank" className={buttonVariants({ variant: "ghost", size: "sm" })}>
               <GitHubLogoIcon className="w-5 h-5" />
             </a>
             <a href="https://linkedin.com/in/michael-crasselt/" target="_blank" className={buttonVariants({ variant: "ghost", size: "sm" })}>
@@ -82,7 +82,7 @@ export const HeroCards = () => {
               </span>
             ))}
           </div>
-          <Button className="w-full text-xs">Technische Dokumentation</Button>
+          <Button className="w-full text-xs"></Button>
         </CardContent>
       </Card>
 
