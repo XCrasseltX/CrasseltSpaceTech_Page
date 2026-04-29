@@ -55,7 +55,7 @@ export const HeroCards = () => {
             <a href="https://github.com/XCrasseltX" target="_blank" className={buttonVariants({ variant: "ghost", size: "sm" })}>
               <GitHubLogoIcon className="w-5 h-5" />
             </a>
-            <a href="https://www.linkedin.com/" target="_blank" className={buttonVariants({ variant: "ghost", size: "sm" })}>
+            <a href="https://linkedin.com/in/michael-crasselt/" target="_blank" className={buttonVariants({ variant: "ghost", size: "sm" })}>
               <Linkedin size="20" />
             </a>
         </CardFooter>
