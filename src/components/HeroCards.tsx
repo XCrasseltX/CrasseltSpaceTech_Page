@@ -14,10 +14,10 @@ import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
 export const HeroCards = () => {
   return (
-    <div className="hidden lg:flex flex-row flex-wrap gap-8 relative w-[700px] h-[500px]">
+    <div className="hidden lg:flex flex-row flex-wrap gap-8 relative w-[800px] h-[600px]">
       
       {/* Simulation / OpenFOAM Card */}
-      <Card className="w-[340px] top-0 left-0 z-10 drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card className="absolute w-[340px] -top-[0px] drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="flex flex-row items-center gap-4 pb-2">
           <div className="bg-primary/20 p-2 rounded-lg">
             <Rocket className="text-primary" size={24} />
@@ -36,7 +36,7 @@ export const HeroCards = () => {
       </Card>
 
       {/* Profile / Expert Card */}
-      <Card className="absolute right-0 top-10 w-72 z-0 drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card className="absolute right-[20px] top-4 w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="mt-8 flex justify-center items-center pb-2">
           <div className="absolute -top-12 w-24 h-24 bg-muted rounded-full border-4 border-background overflow-hidden flex items-center justify-center">
              <span className="text-xs text-center p-2 text-muted-foreground">Profilbild / Michael</span>
@@ -62,7 +62,7 @@ export const HeroCards = () => {
       </Card>
 
       {/* Technical IP / Gizmo Card */}
-      <Card className="absolute top-[220px] left-[20px] w-72 z-20 drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card className="absolute top-[150px] left-[50px] w-72 drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader>
           <CardTitle className="flex items-center justify-between">
             Gizmo IP
@@ -87,7 +87,7 @@ export const HeroCards = () => {
       </Card>
 
       {/* Manufacturing / Hardware Card */}
-      <Card className="absolute w-[350px] bottom-4 right-0 z-30 drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card className="absolute w-[350px] -right-[10px] bottom-[35px] drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="space-y-1 flex md:flex-row justify-start items-start gap-4">
           <div className="mt-1 bg-primary/20 p-2 rounded-lg">
             <Box className="text-primary" size={24} />
