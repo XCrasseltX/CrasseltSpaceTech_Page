@@ -62,7 +62,7 @@ export const HeroCards = () => {
       </Card>
 
       {/* Technical IP / Gizmo Card */}
-      <Card className="absolute top-[150px] left-[50px] w-72 drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card className="absolute top-[200px] left-[50px] w-72 drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader>
           <CardTitle className="flex items-center justify-between">
             Gizmo IP
