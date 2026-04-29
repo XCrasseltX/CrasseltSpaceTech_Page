@@ -36,7 +36,7 @@ export const HeroCards = () => {
       </Card>
 
       {/* Profile / Expert Card */}
-      <Card className="absolute right-[20px] top-4 w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card className="absolute right-[50px] top-4 w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="mt-8 flex justify-center items-center pb-2">
           <div className="absolute -top-12 w-24 h-24 bg-muted rounded-full border-4 border-background overflow-hidden flex items-center justify-center">
              <span className="text-xs text-center p-2 text-muted-foreground">Profilbild / Michael</span>
@@ -62,7 +62,7 @@ export const HeroCards = () => {
       </Card>
 
       {/* Technical IP / Gizmo Card */}
-      <Card className="absolute top-[300px] left-[100px] w-72 drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card className="absolute top-[350px] left-[100px] w-72 drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader>
           <CardTitle className="flex items-center justify-between">
             Gizmo IP
