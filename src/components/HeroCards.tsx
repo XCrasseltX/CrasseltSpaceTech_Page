@@ -62,7 +62,7 @@ export const HeroCards = () => {
       </Card>
 
       {/* Technical IP / Gizmo Card */}
-      <Card className="absolute top-[200px] left-[50px] w-72 drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card className="absolute top-[250px] left-[50px] w-72 drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader>
           <CardTitle className="flex items-center justify-between">
             Gizmo IP
@@ -74,7 +74,7 @@ export const HeroCards = () => {
           <div className="space-y-2">
             {[
               { icon: <BrainCircuit size={16}/>, label: "Neuromorphic Logic" },
-              { icon: <Cpu size={16}/>, label: "Embedded C++ (ESP-IDF)" },
+              { icon: <Cpu size={16}/>, label: "C++, Python and works with HomeAssistant" },
               { icon: <Check size={16}/>, label: "Real-time Telemetry" }
             ].map((item, index) => (
               <span key={index} className="flex items-center gap-2 text-sm text-muted-foreground">
