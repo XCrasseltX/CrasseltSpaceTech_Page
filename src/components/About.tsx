@@ -1,4 +1,4 @@
-import { Statistics } from "./Statistics";
+//import { Statistics } from "./Statistics";
 import pilot from "../assets/pilot.png";
 
 export const About = () => {
@@ -32,7 +32,7 @@ export const About = () => {
               </p>
             </div>
 
-            <Statistics />
+            
           </div>
         </div>
       </div>
