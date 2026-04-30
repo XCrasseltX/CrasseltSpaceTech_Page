@@ -23,13 +23,13 @@ interface SociaNetworkslProps {
 
 const teamList: TeamProps[] = [
   {
-    imageUrl: "https://i.pravatar.cc/150?img=35",
-    name: "Emma Smith",
-    position: "Product Manager",
+    imageUrl: "https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fwhy-are-some-instagram-base-pfps-more-detailed-than-others-v0-0tzygronth3d1.png%3Fwidth%3D344%26format%3Dpng%26auto%3Dwebp%26s%3Daae1389f005a5c76568023c6b4393021f6b31865",
+    name: "Jessi",
+    position: "Social Media",
     socialNetworks: [
       {
         name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "https://www.linkedin.com/",
       },
       {
         name: "Facebook",
@@ -42,13 +42,13 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl: "https://i.pravatar.cc/150?img=60",
-    name: "John Doe",
-    position: "Tech Lead",
+    imageUrl: "https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fwhy-are-some-instagram-base-pfps-more-detailed-than-others-v0-0tzygronth3d1.png%3Fwidth%3D344%26format%3Dpng%26auto%3Dwebp%26s%3Daae1389f005a5c76568023c6b4393021f6b31865",
+    name: "Michael Crasselt",
+    position: "Product Manager and founder",
     socialNetworks: [
       {
         name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "https://www.linkedin.com/",
       },
       {
         name: "Facebook",
@@ -61,33 +61,18 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl: "https://i.pravatar.cc/150?img=36",
-    name: "Ashley Ross",
-    position: "Frontend Developer",
+    imageUrl: "https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fwhy-are-some-instagram-base-pfps-more-detailed-than-others-v0-0tzygronth3d1.png%3Fwidth%3D344%26format%3Dpng%26auto%3Dwebp%26s%3Daae1389f005a5c76568023c6b4393021f6b31865",
+    name: "LEO",
+    position: "Tocherunternehmen",
     socialNetworks: [
       {
         name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "https://www.linkedin.com/",
       },
 
       {
         name: "Instagram",
         url: "https://www.instagram.com/",
-      },
-    ],
-  },
-  {
-    imageUrl: "https://i.pravatar.cc/150?img=17",
-    name: "Bruce Rogers",
-    position: "Backend Developer",
-    socialNetworks: [
-      {
-        name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
-      {
-        name: "Facebook",
-        url: "https://www.facebook.com/",
       },
     ],
   },
@@ -120,8 +105,7 @@ export const Team = () => {
       </h2>
 
       <p className="mt-4 mb-10 text-xl text-muted-foreground">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-        dolor pariatur sit!
+        if you Want a Design Please Contact me
       </p>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 gap-y-10">
@@ -144,7 +128,7 @@ export const Team = () => {
               </CardHeader>
 
               <CardContent className="text-center pb-2">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>We do the Impossible</p>
               </CardContent>
 
               <CardFooter>
