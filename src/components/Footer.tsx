@@ -12,7 +12,7 @@ export const Footer = () => {
             href="/"
             className="font-bold text-xl flex"
           >
-            <LogoIcon className="w-32 h-auto" />
+            <LogoIcon className="w-48 h-auto" />
           </a>
         </div>
 
