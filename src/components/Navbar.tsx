@@ -48,13 +48,14 @@ export const Navbar = () => {
     <header className="sticky border-b-[1px] top-0 z-50 w-full bg-white dark:border-b-slate-700 dark:bg-background">
       <NavigationMenu className="mx-auto">
         <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between ">
-          <NavigationMenuItem className="font-bold flex">
+          <NavigationMenuItem className="font-bold flex relative w-20"> {/* w-20 reserviert Platz, damit das Logo nichts überlagert */}
             <a
               rel="noreferrer noopener"
               href="/"
-              className="ml-2 font-bold text-xl flex"
+              className="absolute top-0 left-0 z-50 transition-transform hover:scale-105"
             >
-              <Icon className="w-13 h-auto"/>
+              {/* Wir nutzen eine feste Pixel-Höhe für volle Kontrolle */}
+              <Icon className="w-auto h-24 drop-shadow-lg" /> 
             </a>
           </NavigationMenuItem>
 
