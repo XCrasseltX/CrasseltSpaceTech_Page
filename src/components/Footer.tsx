@@ -12,8 +12,7 @@ export const Footer = () => {
             href="/"
             className="font-bold text-xl flex"
           >
-            <LogoIcon />
-            Crasselt SpaceTech
+            <LogoIcon className="w-250 h-auto" />
           </a>
         </div>
 
@@ -58,7 +57,7 @@ export const Footer = () => {
               href="#"
               className="opacity-60 hover:opacity-100"
             >
-              Features
+              How It Works
             </a>
           </div>
 
@@ -68,7 +67,7 @@ export const Footer = () => {
               href="#"
               className="opacity-60 hover:opacity-100"
             >
-              Pricing
+              Services
             </a>
           </div>
 
@@ -78,7 +77,7 @@ export const Footer = () => {
               href="#"
               className="opacity-60 hover:opacity-100"
             >
-              FAQ
+              Crew
             </a>
           </div>
         </div>
