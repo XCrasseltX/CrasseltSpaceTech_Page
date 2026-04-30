@@ -10,21 +10,21 @@ interface ServiceProps {
 
 const serviceList: ServiceProps[] = [
   {
-    title: "Code Collaboration",
+    title: "Advanced Mechanical Engineering",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "High-precision CAD development in SolidWorks, specializing in Design for Manufacturing (DfM) for aerospace components and complex robotic prototypes.",
     icon: <ChartIcon />,
   },
   {
-    title: "Project Management",
+    title: "High-Fidelity Simulation (CFD)",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    icon: <WalletIcon />,
+      "Validating performance through Computational Fluid Dynamics using OpenFOAM to ensure aerodynamic efficiency and structural integrity before production.",
+    icon: <WalletIcon />, // Falls PlaneIcon verfügbar, sonst WalletIcon lassen
   },
   {
-    title: "Task Automation",
+    title: "Embedded Intelligence & AI",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Integrating hardware-near software in C++ and custom AI solutions like hormone-based SNN simulations for truly autonomous hardware behavior.",
     icon: <MagnifierIcon />,
   },
 ];
@@ -38,14 +38,13 @@ export const Services = () => {
         <div>
           <h2 className="text-3xl md:text-4xl font-bold">
             <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-              Client-Centric{" "}
+              Engineering{" "}
             </span>
-            Services
+            Solutions
           </h2>
 
           <p className="text-muted-foreground text-xl mt-4 mb-8 ">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-            dolor.
+            Combining industrial precision with cutting-edge software and physical validation to accelerate your aerospace and robotics development.
           </p>
 
           <div className="flex flex-col gap-8">
@@ -67,10 +66,11 @@ export const Services = () => {
           </div>
         </div>
 
+        {/* Hier könntest du statt cubeLeg ein Rendering deiner Strömungssimulation einbauen */}
         <img
-          src={cubeLeg}
+          src={cubeLeg} 
           className="w-[300px] md:w-[500px] lg:w-[600px] object-contain"
-          alt="About services"
+          alt="Technical Engineering Showcase"
         />
       </div>
     </section>
