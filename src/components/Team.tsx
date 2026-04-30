@@ -28,7 +28,7 @@ const teamList: TeamProps[] = [
   {
     imageUrl: Jessi,
     name: "Jessi",
-    position: "Social Media",
+    position: "Operations & Social Media Lead",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -47,7 +47,7 @@ const teamList: TeamProps[] = [
   {
     imageUrl: Michi,
     name: "Michael Crasselt",
-    position: "Product Manager and founder",
+    position: "Founder & Lead Systems Engineer",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -66,7 +66,7 @@ const teamList: TeamProps[] = [
   {
     imageUrl: Leo,
     name: "LEO",
-    position: "Tocherunternehmen",
+    position: "Sub-Division: Hier noch Richtung angeben",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -102,13 +102,13 @@ export const Team = () => {
     >
       <h2 className="text-3xl md:text-4xl font-bold">
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Our Dedicated{" "}
+          The Engineering{" "}
         </span>
         Crew
       </h2>
 
       <p className="mt-4 mb-10 text-xl text-muted-foreground">
-        if you Want a Design Please Contact me
+        From initial concept to functional prototype – we bridge the gap between imagination and physical reality.
       </p>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 gap-y-10">
@@ -131,7 +131,7 @@ export const Team = () => {
               </CardHeader>
 
               <CardContent className="text-center pb-2">
-                <p>We do the Impossible</p>
+                <p>Precision in every line of code and every micron of design.</p>
               </CardContent>
 
               <CardFooter>
