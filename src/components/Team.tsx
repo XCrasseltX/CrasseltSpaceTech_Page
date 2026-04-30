@@ -1,4 +1,7 @@
 import { buttonVariants } from "@/components/ui/button";
+import Michi from "../assets/pilot.png";
+import Jessi from "../assets/growth.png";
+import Leo from "../assets/icon.png";
 import {
   Card,
   CardContent,
@@ -23,7 +26,7 @@ interface SociaNetworkslProps {
 
 const teamList: TeamProps[] = [
   {
-    imageUrl: "",
+    imageUrl: Jessi,
     name: "Jessi",
     position: "Social Media",
     socialNetworks: [
@@ -42,7 +45,7 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl: "",
+    imageUrl: Michi,
     name: "Michael Crasselt",
     position: "Product Manager and founder",
     socialNetworks: [
@@ -61,7 +64,7 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl: "",
+    imageUrl: Leo,
     name: "LEO",
     position: "Tocherunternehmen",
     socialNetworks: [
