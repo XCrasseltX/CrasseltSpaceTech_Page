@@ -20,7 +20,7 @@ export const Hero = () => {
             <span className="inline bg-gradient-to-r from-[#61DAFB] via-[#1fc0f1] to-[#03a3d7] text-transparent bg-clip-text">
               Future
             </span>{" "}
-            of Autonomous Hardware.
+            of Autonomous Systems.
           </h2>
         </main>
 

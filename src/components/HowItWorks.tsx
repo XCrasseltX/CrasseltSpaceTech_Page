@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-import { MedalIcon, MapIcon, PlaneIcon, GiftIcon } from "../components/Icons";
+import { MedalIcon, MapIcon, PlaneIcon, GiftIcon, MagnifierIcon } from "../components/Icons";
 
 interface FeatureProps {
   icon: JSX.Element;
@@ -10,27 +10,33 @@ interface FeatureProps {
 const features: FeatureProps[] = [
   {
     icon: <MedalIcon />,
-    title: "Exploration & System Architecture",
+    title: "01 Exploration",
     description:
-      "Before the first bolt is turned, we define the mission. This includes Requirements Engineering for mechanics, electronics, and software, as well as defining the hardware/software stacks (e.g., ESP-IDF, C++, Redis integration) to create a solid logical concept.",
+      "Defining the mission. We conduct requirements engineering for mechanics and software while establishing the core technology stack using C++, ESP-IDF, and Redis.",
   },
   {
     icon: <MapIcon />,
-    title: "High-Fidelity CAD & Design",
+    title: "02 Design",
     description:
-      "Bringing the vision to life through parametric 3D modeling in SolidWorks. We focus on Design for Manufacturing (DfM) to optimize parts for 3D printing, CNC machining, or injection molding, ensuring a seamless transition from digital model to production.",
+      "Transforming concepts into reality through high-fidelity CAD modeling in SolidWorks, focusing on Design for Manufacturing (DfM) for aerospace-grade components.",
   },
   {
     icon: <PlaneIcon />,
-    title: "Physical Validation & Simulation",
+    title: "03 Validation",
     description:
-      "Eliminating guesswork through science. Using OpenFOAM for CFD (Computational Fluid Dynamics) and structural analysis, we validate aerodynamic performance and mechanical integrity before any physical prototype is built.",
+      "Science-backed precision. We utilize OpenFOAM for CFD simulations to validate aerodynamic performance and structural integrity before any physical build.",
   },
   {
     icon: <GiftIcon />,
-    title: "Embedded Intelligence & AI",
+    title: "04 Intelligence",
     description:
-      "Giving hardware a brain. We implement low-level control logic in C++ and integrate advanced AI, such as Spiking Neural Network (SNN) hormone simulations, to create truly autonomous and responsive systems.",
+      "Giving hardware a brain. We implement low-level control logic and custom AI solutions, such as biologically inspired hormone simulations for autonomous behavior.",
+  },
+  {
+    icon: <MagnifierIcon />, 
+    title: "05 Prototyping",
+    description:
+      "The final frontier. We manufacture functional prototypes using 3D printing and precision assembly, bridging the gap from digital design to physical deployment.",
   },
 ];
 
@@ -41,14 +47,14 @@ export const HowItWorks = () => {
       className="container text-center py-24 sm:py-32"
     >
       <h2 className="text-3xl md:text-4xl font-bold ">
-        How It{" "}
+        Engineering the{" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Works{" "}
+          Extraordinary{" "}
         </span>
         Der Crasselt SpaceTech Workflow:
       </h2>
       <p className="md:w-3/4 mx-auto mt-4 mb-8 text-xl text-muted-foreground">
-        In 5 Schritten zur Innovation
+        Our 5-Step Process to Functional Innovation
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
