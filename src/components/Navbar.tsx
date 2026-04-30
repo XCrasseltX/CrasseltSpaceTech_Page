@@ -25,16 +25,16 @@ interface RouteProps {
 
 const routeList: RouteProps[] = [
   {
-    href: "#features",
-    label: "Features",
+    href: "#About",
+    label: "About Crasse",
   },
   {
-    href: "#testimonials",
-    label: "Testimonials",
+    href: "#HowItWorks",
+    label: "How It Works",
   },
   {
-    href: "#pricing",
-    label: "Pricing",
+    href: "#Crew",
+    label: "Crew",
   },
   {
     href: "#faq",
@@ -45,7 +45,7 @@ const routeList: RouteProps[] = [
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
-    <header className="sticky border-b-[1px] top-0 z-50 w-full bg-white dark:border-b-slate-700 dark:bg-background">
+    <header className="sticky border-b-[1px] top-0 z-60 w-full bg-white dark:border-b-slate-700 dark:bg-background">
       <NavigationMenu className="mx-auto">
         <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between ">
           <NavigationMenuItem className="font-bold flex">
