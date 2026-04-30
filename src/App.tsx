@@ -13,20 +13,21 @@ import { Services } from "./components/Services";
 //import { Sponsors } from "./components/Sponsors";
 import { Team } from "./components/Team";
 //import { Testimonials } from "./components/Testimonials";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Contact } from "./components/Kontact";
+
 import "./App.css";
+
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <About />
-      <HowItWorks />
-      <Services />
-      <Team />
-      <Footer />
-      <ScrollToTop />
-    </>
+
+    <Router>
+      <Routes>
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
+
   );
 }
 
