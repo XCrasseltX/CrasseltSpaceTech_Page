@@ -55,7 +55,7 @@ export const Navbar = () => {
               className="absolute -top-8 left-0 z-50 transition-transform hover:scale-105"
             >
               {/* Wir nutzen eine feste Pixel-Höhe für volle Kontrolle */}
-              <Icon className="w-auto h-24 drop-shadow-lg" /> 
+              <Icon className="w-auto h-20 drop-shadow-lg" /> 
             </a>
           </NavigationMenuItem>
 
