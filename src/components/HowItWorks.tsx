@@ -51,7 +51,6 @@ export const HowItWorks = () => {
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           Extraordinary{" "}
         </span>
-        Der Crasselt SpaceTech Workflow:
       </h2>
       <p className="md:w-3/4 mx-auto mt-4 mb-8 text-xl text-muted-foreground">
         Our 5-Step Process to Functional Innovation
