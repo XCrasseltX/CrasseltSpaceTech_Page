@@ -52,7 +52,7 @@ export const Navbar = () => {
             <a
               rel="noreferrer noopener"
               href="/"
-              className="absolute top-0 left-0 z-50 transition-transform hover:scale-105"
+              className="absolute top-0 left-0 z-30 transition-transform hover:scale-105"
             >
               {/* Wir nutzen eine feste Pixel-Höhe für volle Kontrolle */}
               <Icon className="w-auto h-24 drop-shadow-lg" /> 
