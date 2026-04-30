@@ -16,6 +16,7 @@ interface TeamProps {
   imageUrl: string;
   name: string;
   position: string;
+  description: string;
   socialNetworks: SociaNetworkslProps[];
 }
 
@@ -29,6 +30,7 @@ const teamList: TeamProps[] = [
     imageUrl: Jessi,
     name: "Jessi",
     position: "Operations & Social Media Lead",
+    description: "Driving growth and managing the digital heartbeat of Crasselt SpaceTech.",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -48,6 +50,7 @@ const teamList: TeamProps[] = [
     imageUrl: Michi,
     name: "Michael Crasselt",
     position: "Founder & Lead Systems Engineer",
+    description: "Architecting high-performance systems with C++, SolidWorks, and emotional AI integration.",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -66,7 +69,8 @@ const teamList: TeamProps[] = [
   {
     imageUrl: Leo,
     name: "LEO",
-    position: "Sub-Division: Hier noch Richtung angeben",
+    position: "Sub-Division: Rapid Prototyping & Manufacturing",
+    description: "Transforming digital precision into physical reality through advanced manufacturing.",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -113,7 +117,7 @@ export const Team = () => {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-10">
         {teamList.map(
-          ({ imageUrl, name, position, socialNetworks }: TeamProps) => (
+          ({ imageUrl, name, position, description, socialNetworks }: TeamProps) => (
             <Card
               key={name}
               className="bg-muted/50 relative mt-8 flex flex-col justify-center items-center"
@@ -131,7 +135,7 @@ export const Team = () => {
               </CardHeader>
 
               <CardContent className="text-center pb-2">
-                <p>Precision in every line of code and every micron of design.</p>
+                <p>{description}</p>
               </CardContent>
 
               <CardFooter>
