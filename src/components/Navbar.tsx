@@ -58,6 +58,14 @@ export const Navbar = () => {
               <Icon className="w-auto h-20 drop-shadow-lg" /> 
             </a>
           </NavigationMenuItem>
+          <div className="hidden md:flex gap-4">
+            <a
+              href="#contact"
+              className={`${buttonVariants({ variant: "default" })} bg-green-600 hover:bg-green-700 text-white font-bold px-6`}
+            >
+              Request a Quote
+            </a>
+          </div>
 
           {/* mobile */}
           <span className="flex md:hidden">
