@@ -21,13 +21,18 @@ import "./App.css";
 
 function App() {
   return (
-
-    <Router>
-      <Routes>
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </Router>
-
+    
+    <>
+      <Navbar />
+      <Hero />
+      <About />
+      <HowItWorks />
+      <Services />
+      <Team />
+      <Footer />
+      <ScrollToTop />
+      
+    </>
   );
 }
 
