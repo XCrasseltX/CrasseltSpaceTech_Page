@@ -33,12 +33,12 @@ const routeList: RouteProps[] = [
     label: "How It Works",
   },
   {
-    href: "#team",
-    label: "Crew",
+    href: "#services",
+    label: "Services",
   },
   {
-    href: "#faq",
-    label: "FAQ",
+    href: "#team",
+    label: "Crew",
   },
 ];
 
@@ -47,14 +47,14 @@ export const Navbar = () => {
   return (
     <header className="sticky border-b-[1px] top-0 z-50 w-full bg-white dark:border-b-slate-700 dark:bg-background">
       <NavigationMenu className="mx-auto">
-        <NavigationMenuList className="container h-22 px-4 w-screen flex justify-between ">
+        <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between ">
           <NavigationMenuItem className="font-bold flex">
             <a
               rel="noreferrer noopener"
               href="/"
               className="ml-2 font-bold text-xl flex"
             >
-              <Icon className="w-20 h-auto"/>
+              <Icon className="w-13 h-auto"/>
             </a>
           </NavigationMenuItem>
 
