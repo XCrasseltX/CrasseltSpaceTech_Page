@@ -57,7 +57,7 @@ export const HowItWorks = () => {
         Our 5-Step Process to Functional Innovation
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
         {features.map(({ icon, title, description }: FeatureProps) => (
           <Card
             key={title}

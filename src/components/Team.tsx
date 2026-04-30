@@ -111,7 +111,7 @@ export const Team = () => {
         From initial concept to functional prototype – we bridge the gap between imagination and physical reality.
       </p>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 gap-y-10">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-10">
         {teamList.map(
           ({ imageUrl, name, position, socialNetworks }: TeamProps) => (
             <Card
