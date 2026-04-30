@@ -23,7 +23,7 @@ interface SociaNetworkslProps {
 
 const teamList: TeamProps[] = [
   {
-    imageUrl: "https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fwhy-are-some-instagram-base-pfps-more-detailed-than-others-v0-0tzygronth3d1.png%3Fwidth%3D344%26format%3Dpng%26auto%3Dwebp%26s%3Daae1389f005a5c76568023c6b4393021f6b31865",
+    imageUrl: "",
     name: "Jessi",
     position: "Social Media",
     socialNetworks: [
@@ -42,7 +42,7 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl: "https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fwhy-are-some-instagram-base-pfps-more-detailed-than-others-v0-0tzygronth3d1.png%3Fwidth%3D344%26format%3Dpng%26auto%3Dwebp%26s%3Daae1389f005a5c76568023c6b4393021f6b31865",
+    imageUrl: "",
     name: "Michael Crasselt",
     position: "Product Manager and founder",
     socialNetworks: [
@@ -61,7 +61,7 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl: "https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fwhy-are-some-instagram-base-pfps-more-detailed-than-others-v0-0tzygronth3d1.png%3Fwidth%3D344%26format%3Dpng%26auto%3Dwebp%26s%3Daae1389f005a5c76568023c6b4393021f6b31865",
+    imageUrl: "",
     name: "LEO",
     position: "Tocherunternehmen",
     socialNetworks: [
