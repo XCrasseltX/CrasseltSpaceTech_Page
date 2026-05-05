@@ -11,6 +11,7 @@ import { Contact } from "./components/Kontact"; // Kleiner Hinweis: Schau mal, o
 
 import "./App.css";
 
+{/* 
 const WorkInProgressOverlay = () => {
   return (
     // 'fixed inset-0' legt das div über den ganzen Bildschirm.
@@ -27,6 +28,7 @@ const WorkInProgressOverlay = () => {
     </div>
   );
 };
+*/}
 
 // Wir erstellen eine kleine Hilfs-Komponente für deine Startseite, 
 // damit die App.tsx nicht so unübersichtlich wird.
