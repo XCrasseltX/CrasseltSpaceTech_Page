@@ -17,6 +17,7 @@ import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
 import { Icon } from "./Icons";
+import { Link } from "react-router-dom";
 
 interface RouteProps {
   href: string;
@@ -59,12 +60,12 @@ export const Navbar = () => {
             </a>
           </NavigationMenuItem>
           <div className="hidden md:flex gap-4">
-            <a
-              href="#contact"
+            <Link
+              to="/contact"
               className={`${buttonVariants({ variant: "default" })} bg-green-600 hover:bg-green-700 text-white font-bold px-6`}
             >
               Request a Quote
-            </a>
+            </Link>
           </div>
 
           {/* mobile */}
