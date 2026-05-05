@@ -34,13 +34,13 @@ const Home = () => {
   return (
     <div className="relative">
       
-      {/* 
+{/*       
         HIER IST DAS OVERLAY: 
         Wenn du die Landingpage bearbeiten oder freigeben willst, 
         kommentierst du diese Zeile einfach aus! 
-      */}
+      
       <WorkInProgressOverlay />
-
+*/}
       
       <Hero />
       <About />
