@@ -8,16 +8,33 @@ import { Services } from "./components/Services";
 import { Team } from "./components/Team";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Contact } from "./components/Kontact"; // Kleiner Hinweis: Schau mal, ob der Ordner wirklich "Kontact" mit 'K' und 'c' heißt!
+import { useState, useEffect } from "react";
 
 import "./App.css";
 
 {/* auskomentieten?*/}
 const WorkInProgressOverlay = () => {
+  const [showOverlay, setShowOverlay] = useState(true);
+
+  useEffect(() => {
+    // 1. Prüfen, ob du das Overlay schon mal entsperrt hast
+    if (localStorage.getItem("devMode") === "aktiv") {
+      setShowOverlay(false);
+    }
+
+    // 2. Die geheime Hintertür: Wenn die URL "?dev=true" enthält
+    if (window.location.href.includes("?dev=true")) {
+      localStorage.setItem("devMode", "aktiv");
+      setShowOverlay(false);
+    }
+  }, []);
+
+  // Wenn du als Admin eingeloggt bist, wird das Overlay unsichtbar
+  if (!showOverlay) return null;
+
   return (
-    // 'fixed inset-0' legt das div über den ganzen Bildschirm.
-    // 'z-50' sorgt dafür, dass es ÜBER allen anderen Elementen liegt.
-    // Der Hintergrund fängt automatisch alle Klicks ab, sodass man nichts darunter anklicken kann.
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-background/80 backdrop-blur-sm">
+    // bg-background/98 macht es fast komplett undurchsichtig
+    <div className="fixed inset-0 z-[999] flex items-center justify-center bg-background/98 backdrop-blur-md">
       <div className="text-center p-8 border rounded-xl shadow-lg bg-card">
         <h1 className="text-4xl font-bold mb-4">🚧 Work in Progress 🚧</h1>
         <p className="text-muted-foreground text-lg">
@@ -34,41 +51,37 @@ const WorkInProgressOverlay = () => {
 // damit die App.tsx nicht so unübersichtlich wird.
 const Home = () => {
   return (
-    <div className="relative">
-      
-{/*       
-        HIER IST DAS OVERLAY: 
-        Wenn du die Landingpage bearbeiten oder freigeben willst, 
-        kommentierst du diese Zeile einfach aus! 
-*/}      
-      <WorkInProgressOverlay />
-
-      
+    <>
       <Hero />
       <About />
       <HowItWorks />
       <Services />
       <Team />
-    </div>
+    </>
   );
 };
 
 function App() {
   return (
-    <Router>
-      <Navbar /> {/* Bleibt immer oben sichtbar */}
-      
-      <Routes>
-        {/* Route 1: Deine Hauptseite */}
-        <Route path="/" element={<Home />} />
-        
-        {/* Route 2: Deine neue Kontakt-Seite */}
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+    <>
+      {/* Das Overlay wacht jetzt über die gesamte App */}
+      <WorkInProgressOverlay />
 
-      <Footer /> {/* Bleibt immer unten sichtbar */}
-      <ScrollToTop />
-    </Router>
+      <Router>
+        <Navbar /> {/* Bleibt immer oben sichtbar */}
+        
+        <Routes>
+          {/* Route 1: Deine Hauptseite */}
+          <Route path="/" element={<Home />} />
+          
+          {/* Route 2: Deine neue Kontakt-Seite */}
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+
+        <Footer /> {/* Bleibt immer unten sichtbar */}
+        <ScrollToTop />
+      </Router>
+    </>
   );
 }
 
