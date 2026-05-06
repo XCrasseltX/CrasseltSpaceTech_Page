@@ -54,7 +54,7 @@ export const Footer = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="#howItWorks"
+              href="/#howItWorks"
               className="opacity-60 hover:opacity-100"
             >
               How It Works
@@ -64,7 +64,7 @@ export const Footer = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="#services"
+              href="/#services"
               className="opacity-60 hover:opacity-100"
             >
               Services
@@ -74,7 +74,7 @@ export const Footer = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="#team"
+              href="/#team"
               className="opacity-60 hover:opacity-100"
             >
               Crew
