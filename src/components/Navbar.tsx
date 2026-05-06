@@ -26,19 +26,19 @@ interface RouteProps {
 
 const routeList: RouteProps[] = [
   {
-    href: "#about",
+    href: "/#about",
     label: "About",
   },
   {
-    href: "#howItWorks",
+    href: "/#howItWorks",
     label: "How It Works",
   },
   {
-    href: "#services",
+    href: "/#services",
     label: "Services",
   },
   {
-    href: "#team",
+    href: "/#team",
     label: "Crew",
   },
 ];
@@ -92,17 +92,16 @@ export const Navbar = () => {
                   </SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col justify-center items-center gap-2 mt-4">
-                  {routeList.map(({ href, label }: RouteProps) => (
-                    <a
-                      rel="noreferrer noopener"
-                      key={label}
-                      href={href}
-                      onClick={() => setIsOpen(false)}
-                      className={buttonVariants({ variant: "ghost" })}
-                    >
-                      {label}
-                    </a>
-                  ))}
+                  {routeList.map((route: RouteProps, label) => (
+                  <Link
+                    to={route.href}
+                    key={label}
+                    onClick={() => setIsOpen(false)}
+                    className={buttonVariants({ variant: "ghost" })}
+                  >
+                    {route.label}
+                  </Link>
+                ))}
                   <a
                     rel="noreferrer noopener"
                     href="https://github.com/XCrasseltX/"
