@@ -1,4 +1,5 @@
 import { LogoIcon } from "./Icons";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -52,33 +53,33 @@ export const Footer = () => {
         <div className="flex flex-col gap-2">
           <h3 className="font-bold text-lg">About</h3>
           <div>
-            <a
+            <Link
               rel="noreferrer noopener"
               href="/#howItWorks"
               className="opacity-60 hover:opacity-100"
             >
               How It Works
-            </a>
+            </Link>
           </div>
 
           <div>
-            <a
+            <Link
               rel="noreferrer noopener"
               href="/#services"
               className="opacity-60 hover:opacity-100"
             >
               Services
-            </a>
+            </Link>
           </div>
 
           <div>
-            <a
+            <Link
               rel="noreferrer noopener"
               href="/#team"
               className="opacity-60 hover:opacity-100"
             >
               Crew
-            </a>
+            </Link>
           </div>
         </div>
 
