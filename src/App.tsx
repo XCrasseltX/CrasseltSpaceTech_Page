@@ -6,7 +6,7 @@ import { Navbar } from "./components/Navbar";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { Services } from "./components/Services";
 import { Team } from "./components/Team";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { Contact } from "./components/Kontact"; // Kleiner Hinweis: Schau mal, ob der Ordner wirklich "Kontact" mit 'K' und 'c' heißt!
 import { useState, useEffect } from "react";
 
@@ -50,6 +50,25 @@ const WorkInProgressOverlay = () => {
 // Wir erstellen eine kleine Hilfs-Komponente für deine Startseite, 
 // damit die App.tsx nicht so unübersichtlich wird.
 const Home = () => {
+  // Holt uns die aktuelle URL (inklusive dem Hash wie "#about")
+  const location = useLocation();
+
+  useEffect(() => {
+    // Prüfen, ob ein Hash in der URL steht
+    if (location.hash) {
+      // Das "#" abschneiden, damit aus "#about" nur "about" wird
+      const id = location.hash.replace("#", "");
+      
+      // Das HTML-Element mit dieser ID auf der Seite suchen
+      const element = document.getElementById(id);
+      
+      if (element) {
+        // ... und sanft dorthin scrollen!
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]); // Dieser Effekt wird jedes Mal ausgeführt, wenn sich die URL ändert
+  
   return (
     <>
       <Hero />
